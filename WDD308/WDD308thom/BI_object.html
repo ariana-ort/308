@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD308 Built-In Objects</title>
+</head>
+
+<body>
+
+    <button onclick="butler()">Butler University</button>
+    <br/><br/>
+    <button onclick="printPage()">Print Page</button>
+    <p id="animals">dog, cat, lizard, fish, bird, snake</p>
+    <p id="favAnimal"></p>
+    <button onclick="randNum1()">Random Number</button>
+    <p id="randNum1"></p>
+    <button onclick="randNum2()">Random Number 1-10</button>
+    <p id="randNum2F"></p>
+    <p id="randNum2C"></p>
+    <p id="randNum2R"></p>
+
+    <script>
+
+        function randNum1(){
+            var randomNumber = Math.random();
+            document.getElementById('randNum1').innerHTML = randomNumber;
+        }
+        
+        function randNum2(){
+            var randomNumber = (10*Math.random())+1;
+            document.getElementById('randNum2F').innerHTML = "Floor: " + Math.floor(randomNumber);
+            document.getElementById('randNum2C').innerHTML = "Ceiling: " + Math.ceil(randomNumber);
+            document.getElementById('randNum2R').innerHTML = "Round: " + Math.round(randomNumber);
+        }
+
+
+        var animals = document.getElementById('animals').innerHTML;
+        var animalArray = animals.split(", ");
+        document.getElementById('favAnimal').innerHTML= "My favorite animal is a "+ animalArray[0]+ ".";
+
+        var dog = "Janie";
+        // window.alert("hello"); 
+        // alert("world");
+        // window.prompt("What is your name?"); var name = prompt("What is your name?"); 
+        // document.write("Good morning, " + name + ". Hope you have a great day!");
+
+        function butler() {
+            open("https://www.butler.edu");
+        }
+
+        function printPage(){
+            window.print();
+        }
+
+        document.write("<p>Last Updated: " + document.lastModified + "</p>");
+    </script>
+</body>
+
+</html>

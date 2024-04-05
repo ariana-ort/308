@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <title>Here I am to save the day!</title>
+    <h3>Window Object</h3>
+    <p id="pageInfo"></p>
+    <input type="button" value="Butler University" onclick="BU()" />
+    <input type="button" value="print page" onclick="printPage()" />
+    <input type="button" value="Ask Me" onclick="question()" />
+    <p id="color"></p>
+    <hr/>
+    <h3>Document Object</h3>
+    <p id="docInfo"></p>
+    <hr/>
+    <h3>String Object</h3>
+    <p>Once the user starts typing in the text input, calculate (1)how many characters they have typed and (2) find the character that is exactly in the center. Display information in the paragraph below.</p>
+    <label>Greeting: </label>
+    <input type="text" id="greeting" onkeyup="getGreeting()" />
+    <p id="messageInfo"></p>
+    <h4>Class Information</h4>
+    <p id="classes">CME219,cme308,CME419, cme422
+    </p>
+    <p id="class"></p>
+    <p id="replaceEx">This class is challenging.</p>
+    <hr/>
+    <h3>Number and Math Objects</h3>
+    <p id="quizGrades">75,22,67,90</p>
+    <p id="avgQuiz"></p>
+    <p id="fixedD"></p>
+    <hr/>
+    <p id="mathPi"></p>
+    <input type="button" value="Number between 0-1" onclick="randomNum()" />
+    <p id="rMathSmall"></p>
+    <input type="button" value="Number between 1-10" onclick="randNum10()" />
+    <p id="rMathBig"></p>
+    <hr/>
+    <h3>Date Object</h3>
+    <hr/>
+
+
+
+    <p>Date:
+        <input id="txtDate" type="text" />
+    </p>
+    <p>
+        <input type="button" onclick="getdate()" value="Fill Follow Date" />
+    </p>
+    <p>Follow Date:
+        <input id="follow_Date" type="text" />
+    </p>
+
+    <script src="FunWObj.js"></script>
+</body>
+
+</html>
